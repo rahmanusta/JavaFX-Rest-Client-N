@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="466.0000999999975" prefWidth="531.0" rotate="0.0" translateX="0.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.kodcu.FXMLController">
+  <children>
+    <Button id="button" fx:id="saveButton" layoutX="307.0" layoutY="26.0" onAction="#save" prefHeight="52.0" prefWidth="62.0" rotate="0.0" text="Save">
+      <rotationAxis>
+        <Point3D x="1.0" />
+      </rotationAxis>
+    </Button>
+    <TableView fx:id="bookTable" editable="true" layoutX="31.0" layoutY="96.0" prefHeight="346.0" prefWidth="472.0" tableMenuButtonVisible="false">
+      <columns>
+        <TableColumn editable="true" prefWidth="75.0" text="Id" fx:id="idColumn" />
+        <TableColumn prefWidth="300.0" text="Book name" fx:id="nameColumn" />
+        <TableColumn prefWidth="100.0" text="Book price" fx:id="priceColumn" />
+      </columns>
+    </TableView>
+    <TextField fx:id="nameField" layoutX="97.0" layoutY="25.0" prefWidth="200.0" />
+    <TextField fx:id="priceField" layoutX="97.0" layoutY="58.0" prefWidth="200.0" />
+    <Label layoutX="31.0" layoutY="31.0" text="Book name:" />
+    <Label layoutX="31.0" layoutY="64.0" text="Book price:" />
+    <Button id="list" fx:id="listButton" layoutX="375.0" layoutY="26.0" mnemonicParsing="false" onAction="#list" prefHeight="52.0" prefWidth="62.0" text="List" />
+    <Button id="remove" fx:id="deleteButton" layoutX="441.0" layoutY="26.0" mnemonicParsing="false" onAction="#remove" prefHeight="52.0" prefWidth="62.0" text="Remove" />
+  </children>
+  <rotationAxis>
+    <Point3D z="1.0" />
+  </rotationAxis>
+</AnchorPane>
