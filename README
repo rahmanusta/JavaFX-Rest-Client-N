@@ -1,1 +1,4 @@
 This file was created by IntelliJ IDEA 12.1.4 for binding GitHub repository
+
+JavaFX Application which uses Jax-RS 2 Client Api.
+Then, this application works together with Spring-MVC-Restful-N
